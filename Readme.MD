@@ -25,3 +25,5 @@ Future Ideas:
 * Some tests of the code (yeah, they should work, right?).
 * A code style guideline and actually follow it
   * Maybe a way to check my code for compliance?
+End.
+

@@ -23,3 +23,6 @@ If IntelliJ is confused by the SQL quries in Python code you may need to go to:
       * User Parameters
         CHECK: "Enable in string literals with SQL injection"
 
+
+### Laravel
+See LaravelInit.MD

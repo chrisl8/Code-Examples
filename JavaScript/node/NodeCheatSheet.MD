@@ -18,3 +18,20 @@ function resolvePath(str) {
   return path.resolve(str);
 }
 ```
+
+### Dump entire Object in console..log
+[Stack Overflow](https://stackoverflow.com/a/10729284)
+```
+        const complexDeepObjeject = {};
+        const util = require('util');
+        console.log(util.inspect(complexDeepObjeject, {showHidden: false, depth: null}));
+
+```
+
+### Dump entire Array in console.log
+[Stack Overflow](https://stackoverflow.com/a/48231698/4982408)
+```
+const longArray = [];
+        const util = require('util');
+        console.log(util.inspect(longArray, {maxArrayLength: null}));
+```

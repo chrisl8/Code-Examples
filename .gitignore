@@ -1,3 +1,4 @@
 *.pyc
 .idea
+JavaScript/node_modules/
 JavaScript/node/node_modules/

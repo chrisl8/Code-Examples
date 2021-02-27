@@ -1,12 +1,5 @@
 ESLint for AirBNB code style and Prettier code formatting in IntelliJ
 
-ESLint recommends AGAINST installing globally,
-but installing it locally in a package can cause problems.
-For instance it will break create-react-app, because it already depends on possibly different versions.
-NOTE: I also use jshint and js-beautify in vim, maybe I can change that?
-
-npm install -g prettier
-
 # In new projects that aren't create-react-app based:
 npm i -D eslint prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier eslint-plugin-jasmine eslint-plugin-cypress babel-eslint
 

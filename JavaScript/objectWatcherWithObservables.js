@@ -1,4 +1,5 @@
 const { EventEmitter } = require('events');
+const Observables = require('object-observer');
 
 /*
  The goal here is to use "proxies" and "event handlers"
@@ -73,13 +74,13 @@ myEmitter.on('update', (update) => {
   console.log('Update:', update);
 });
 
-// One could also start with a blank object:
-const store = new Proxy({}, validator);
-store.a = 'hello';
+const myObservableObject = Observables.from(myInitialObject);
 
-// And we can use the same validator function on many objects.
-
-const myObservableObject = new Proxy(myInitialObject, validator);
+myObservableObject.observe((changes) => {
+  changes.forEach((change) => {
+    console.log(change);
+  });
+});
 
 console.log(myObservableObject);
 myObservableObject.thing1 = 1;

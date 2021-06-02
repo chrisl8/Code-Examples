@@ -78,3 +78,4 @@ From your Laravel folder run:
 `mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache storage/logs`  
 NOTE: You may have to fix permissions on these too to make them world read/writeable or whatever it take to let your Apache instance write to them.  
 `chmod o+rw -R storage`
+`chmod o+rw -R bootstrap/cache`

@@ -3,21 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "description": "Example code for my own amusement",
-  "dependencies": {
-    "object-observer": "git+https://github.com/chrisl8/object-observer.git"
-  },
   "devDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.8",
-    "jest": "^27.0.3",
-    "prettier": "^2.1.1"
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.7.1"
   },
   "scripts": {
     "start": "nodemon index.js",

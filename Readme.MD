@@ -20,9 +20,3 @@ Finally, by documenting each example line by line I learn about the code.
 Many times I get to a bit of code and realize that I don't actually understand it,
 which forces me to figure out out one way or another so that I can
 document it or fix it.
-
-Future Ideas:
-* Some tests of the code (yeah, they should work, right?).
-* A code style guideline and actually follow it
-  * Maybe a way to check my code for compliance?
-

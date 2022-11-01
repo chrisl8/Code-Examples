@@ -1,4 +1,5 @@
 const { EventEmitter } = require('events');
+// TODO: Don't use this anymore, it is obsolete. Find a better way, like some form of setters with subscribers or something.
 const Observables = require('object-observer');
 
 /*

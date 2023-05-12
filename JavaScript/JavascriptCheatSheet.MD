@@ -99,3 +99,8 @@ async function printFiles () {
 }
 ```
 [There is something new coming up for ES2018.](http://2ality.com/2016/10/asynchronous-iteration.html)
+
+### Base64 Encoding in Node.js
+https://stackoverflow.com/questions/6182315/how-can-i-do-base64-encoding-in-node-js
+
+

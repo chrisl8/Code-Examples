@@ -86,7 +86,7 @@ async function printFiles () {
 ```
 
 If you want to run them in *series* you have to use `for...of`  
-NOTE that `forEach` *CANNOT* be used with async/await  
+NOTE that `forEach` *CANNOT* and **SHOULD NOT** be used with async/await!  
 
 ```
 async function printFiles () {
@@ -98,7 +98,14 @@ async function printFiles () {
   }
 }
 ```
+NOTE, there are some other ideas that were floated:
 [There is something new coming up for ES2018.](http://2ality.com/2016/10/asynchronous-iteration.html)
+and indeed, the `for await of` syntax DOES exist, but
+[Use Promise.all() instead](https://stackoverflow.com/a/46889489/4982408)
+
+Because with `for await of` it fires them all in parallel, but then waits on them in series, and fails if in series.
+The results are weird, as it LOOKS LIKE they fire in series, but they do not.
+That `for await of` syntax is for a specific use case, and it isn't one I actually do often, so stick with `await Promise.all()` instead.
 
 ### Base64 Encoding in Node.js
 https://stackoverflow.com/questions/6182315/how-can-i-do-base64-encoding-in-node-js
